@@ -1,0 +1,29 @@
+strings:
+  inputs: VIPASOASSESSMENT/Assets/Strings/en.lproj/Localizable.strings
+  filter: .+\.strings$
+  outputs:
+    - templateName: structured-swift4
+      output: VIPASOASSESSMENT/Assets/Strings/Strings.swift
+      params:
+        enumName: Strings
+        publicAccess: true
+xcassets:
+    # icons
+    - inputs:
+          - VIPASOASSESSMENT/Assets/Catalogs/Assets.xcassets
+      outputs:
+          - templateName: swift5
+            output: VIPASOASSESSMENT/Assets/Enums/Assets.swift
+            params:
+                enumName: Images
+                publicAccess: true
+    # colors
+    - inputs:
+          - VIPASOASSESSMENT/Assets/Catalogs/Colors.xcassets
+      outputs:
+          #- templateName: swift5
+          - templatePath: VIPASOASSESSMENT/templates/assets.stencil
+            output: VIPASOASSESSMENT/Assets/Enums/Colors.swift
+            params:
+                enumName: Colors
+                publicAccess: true

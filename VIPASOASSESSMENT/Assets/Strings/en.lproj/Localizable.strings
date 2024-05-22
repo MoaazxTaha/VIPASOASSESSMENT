@@ -1,0 +1,10 @@
+"generic_ok" = "OK";
+"generic_error_message" = "Something wrong happened. \n Please try again later";
+"users_search_screen_title" = "Find Github Users";
+"empty_view_message" = "No matching data at the moment";
+"network_error_connection_failure" = "The device is not connected to internet";
+"users_search_place_holder" = "Search Github users e.g: moaazxtaha";
+"users_search_intial_value" = "moaazxtaha";
+
+
+
